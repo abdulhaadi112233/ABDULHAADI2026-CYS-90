@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>375</width>
+    <height>667</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Budget Bites Lahore</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_central">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_auth">
+       <layout class="QVBoxLayout" name="verticalLayout_pageAuth">
+        <item>
+         <widget class="QLabel" name="label_pageAuthPlaceholder">
+          <property name="text">
+           <string>Auth Screen Placeholder (replaced at runtime by auth_screen.ui)</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_mainMenu">
+       <layout class="QVBoxLayout" name="verticalLayout_pageMainMenu">
+        <item>
+         <widget class="QLabel" name="label_pageMainMenuPlaceholder">
+          <property name="text">
+           <string>Main Menu Placeholder (replaced at runtime by main_menu.ui)</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_restaurants">
+       <layout class="QVBoxLayout" name="verticalLayout_pageRestaurants">
+        <item>
+         <widget class="QLabel" name="label_pageRestaurantsPlaceholder">
+          <property name="text">
+           <string>Restaurants Placeholder (replaced at runtime by restaurants_screen.ui)</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_budget">
+       <layout class="QVBoxLayout" name="verticalLayout_pageBudget">
+        <item>
+         <widget class="QLabel" name="label_pageBudgetPlaceholder">
+          <property name="text">
+           <string>Budget Screen Placeholder (replaced at runtime by budget_screen.ui)</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

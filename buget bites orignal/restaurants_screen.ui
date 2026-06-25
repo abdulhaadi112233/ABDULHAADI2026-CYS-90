@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RestaurantsScreen</class>
+ <widget class="QWidget" name="RestaurantsScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>375</width>
+    <height>667</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Budget Bites Lahore - Restaurants</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #FFFFFF;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_restMain">
+   <property name="leftMargin"><number>20</number></property>
+   <property name="topMargin"><number>20</number></property>
+   <property name="rightMargin"><number>20</number></property>
+   <property name="bottomMargin"><number>10</number></property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_restHeader">
+     <item>
+      <widget class="QPushButton" name="pushButton_backFromRestaurants">
+       <property name="text">
+        <string>←</string>
+       </property>
+       <property name="maximumSize">
+        <size><width>30</width><height>30</height></size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_restaurantsTitle">
+       <property name="text">
+        <string>Restaurants</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #B5482A; font-size: 16px; font-weight: bold;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_restHeader">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_filter">
+       <property name="text">
+        <string>☰</string>
+       </property>
+       <property name="maximumSize">
+        <size><width>30</width><height>30</height></size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_searchRestaurant">
+     <property name="placeholderText">
+      <string>Search for biryani, burgers, or chai...</string>
+     </property>
+     <property name="minimumSize">
+      <size><width>0</width><height>36</height></size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid #DDDDDD; border-radius: 8px; padding-left: 8px;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QListWidget" name="listWidget_restaurants">
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Savours - Gulberg, Lahore  |  4.5  |  Budget Friendly</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Butt Karahi - Lakshmi Chowk, Lahore  |  4.8  |  Iconic Spot</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Coffee Tea &amp; Co. - DHA Phase 5, Lahore  |  4.2  |  Cozy Ambience</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Daily Deli Co. - Johar Town, Lahore  |  4.6  |  Best Burgers</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_restaurantNotFound">
+     <property name="text">
+      <string>Restaurant not found.</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="visible">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #999999; font-size: 12px; padding: 20px;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_restBottomNav">
+     <item>
+      <widget class="QPushButton" name="pushButton_tabExploreR">
+       <property name="text">
+        <string>Explore</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_tabDealsR">
+       <property name="text">
+        <string>Deals</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_tabSavedR">
+       <property name="text">
+        <string>Saved</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_tabProfileR">
+       <property name="text">
+        <string>Profile</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

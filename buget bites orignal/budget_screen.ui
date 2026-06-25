@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BudgetScreen</class>
+ <widget class="QWidget" name="BudgetScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>375</width>
+    <height>667</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Budget Bites Lahore - Budget Suggestions</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #FFFFFF;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_budgetMain">
+   <property name="leftMargin"><number>20</number></property>
+   <property name="topMargin"><number>20</number></property>
+   <property name="rightMargin"><number>20</number></property>
+   <property name="bottomMargin"><number>10</number></property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_budgetHeader">
+     <item>
+      <widget class="QPushButton" name="pushButton_backFromBudget">
+       <property name="text">
+        <string>←</string>
+       </property>
+       <property name="maximumSize">
+        <size><width>30</width><height>30</height></size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_budgetTitle">
+       <property name="text">
+        <string>Budget Suggestions</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #B5482A; font-size: 16px; font-weight: bold;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_budgetHeader">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="tabWidget_budgetType">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_food">
+      <attribute name="title">
+       <string>Food</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_foodTab">
+       <item>
+        <widget class="QLabel" name="label_foodBudgetLabel">
+         <property name="text">
+          <string>Enter your budget (PKR)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spinBox_foodBudget">
+         <property name="minimum">
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <number>100000</number>
+         </property>
+         <property name="suffix">
+          <string> PKR</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_getFoodSuggestions">
+         <property name="minimumSize">
+          <size><width>0</width><height>40</height></size>
+         </property>
+         <property name="text">
+          <string>Get Suggestions</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #B5482A; color: white; border-radius: 8px; font-weight: bold;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_topPicksFood">
+         <property name="text">
+          <string>Top Picks for You — Lahore, PK</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font-weight: bold; color: #1A1A1A;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="listWidget_foodSuggestions">
+         <item>
+          <property name="text">
+           <string>Al-Rehman Biryani - Anarkali Bazaar - Rs. 350-600 (Must Try)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Best Samosa Corner - Gulberg - Rs. 50-200 (Budget King)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Siddique Kabab Shop - Model Town - Rs. 400-800</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_drinks">
+      <attribute name="title">
+       <string>Drinks</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_drinksTab">
+       <item>
+        <widget class="QLabel" name="label_drinksBudgetLabel">
+         <property name="text">
+          <string>Enter your drinks budget (PKR)</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spinBox_drinksBudget">
+         <property name="minimum">
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <number>100000</number>
+         </property>
+         <property name="suffix">
+          <string> PKR</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_getDrinksSuggestions">
+         <property name="minimumSize">
+          <size><width>0</width><height>40</height></size>
+         </property>
+         <property name="text">
+          <string>Get Suggestions</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #B5482A; color: white; border-radius: 8px; font-weight: bold;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="listWidget_drinksSuggestions"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_budgetBottomNav">
+     <item>
+      <widget class="QPushButton" name="pushButton_tabExploreB">
+       <property name="text">
+        <string>Explore</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_tabDealsB">
+       <property name="text">
+        <string>Deals</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_tabSavedB">
+       <property name="text">
+        <string>Saved</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_tabProfileB">
+       <property name="text">
+        <string>Profile</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

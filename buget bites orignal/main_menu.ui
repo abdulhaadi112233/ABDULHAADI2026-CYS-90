@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainMenuScreen</class>
+ <widget class="QWidget" name="MainMenuScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>375</width>
+    <height>667</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Budget Bites Lahore - Main Menu</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #FFFFFF;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_menuMain">
+   <property name="leftMargin"><number>20</number></property>
+   <property name="topMargin"><number>20</number></property>
+   <property name="rightMargin"><number>20</number></property>
+   <property name="bottomMargin"><number>10</number></property>
+   <item>
+    <widget class="QLabel" name="label_menuAppTitle">
+     <property name="text">
+      <string>Budget Bites Lahore</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #B5482A; font-size: 18px; font-weight: bold;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_welcomeHeading">
+     <property name="text">
+      <string>Khush Amdeed!</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 20px; font-weight: bold; color: #1A1A1A;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_welcomeSubtitle">
+     <property name="text">
+      <string>Discover the best value eats in the heart of Lahore.</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #6B6B6B; font-size: 12px;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton_navRestaurants">
+     <property name="minimumSize">
+      <size><width>0</width><height>70</height></size>
+     </property>
+     <property name="text">
+      <string>🍴  Restaurants
+Browse local eateries with great reviews.</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">text-align: left; padding: 10px; border: 1px solid #EEEEEE; border-radius: 10px; background-color: #FAFAFA;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton_navBudget">
+     <property name="minimumSize">
+      <size><width>0</width><height>70</height></size>
+     </property>
+     <property name="text">
+      <string>🏷  Recommendations by Budget
+Find a meal that fits your pocket.</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">text-align: left; padding: 10px; border: 1px solid #EEEEEE; border-radius: 10px; background-color: #FAFAFA;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton_navProfile">
+     <property name="minimumSize">
+      <size><width>0</width><height>70</height></size>
+     </property>
+     <property name="text">
+      <string>👤  View Profile
+Manage your account and preferences.</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">text-align: left; padding: 10px; border: 1px solid #EEEEEE; border-radius: 10px; background-color: #FAFAFA;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton_navExit">
+     <property name="minimumSize">
+      <size><width>0</width><height>70</height></size>
+     </property>
+     <property name="text">
+      <string>⏏  Exit</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">text-align: left; padding: 10px; border: 1px solid #EEEEEE; border-radius: 10px; background-color: #FAFAFA; color: #B5482A;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_menu">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_bottomNav">
+     <item>
+      <widget class="QPushButton" name="pushButton_tabExplore">
+       <property name="text">
+        <string>Explore</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_tabDeals">
+       <property name="text">
+        <string>Deals</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_tabSaved">
+       <property name="text">
+        <string>Saved</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_tabProfile">
+       <property name="text">
+        <string>Profile</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
