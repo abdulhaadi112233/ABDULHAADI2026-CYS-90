@@ -1,0 +1,2 @@
+import shayan
+shayan.welcome()
