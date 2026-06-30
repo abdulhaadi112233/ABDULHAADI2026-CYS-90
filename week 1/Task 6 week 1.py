@@ -1,0 +1,5 @@
+ecat_marks = float(input("Enter your ECAT percentage: "))
+inter_marks = float(input("Enter your Intermediate Part-I percentage: "))
+matric_marks = float(input("Enter your Matric percentage: "))
+aggregate = (ecat_marks * 0.33) + (inter_marks * 0.50) + (matric_marks * 0.17)
+print("Your Aggregate is:", round(aggregate, 2), "%")

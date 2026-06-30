@@ -1,0 +1,5 @@
+bytes = float(input("Enter the number of bytes: "))
+megabytes = bytes / (1024 * 1024)
+gigabytes = bytes / (1024 * 1024 * 1024)
+print("Megabytes (MB):", megabytes)
+print("Gigabytes (GB):", gigabytes)
